@@ -1,7 +1,7 @@
-Website for phpMyAdmin
+Amazing Website for phpMyAdmin
 ======================
 
-Django code for phpMyAdmin's website.
+* Django code for phpMyAdmin's website.
 
 .. image:: https://travis-ci.org/phpmyadmin/website.svg?branch=master
     :target: https://travis-ci.org/phpmyadmin/website
@@ -12,13 +12,13 @@ Django code for phpMyAdmin's website.
 .. image:: https://api.codacy.com/project/badge/Grade/4cfc116f766947dcad6c006b295aafc2    
     :target: https://www.codacy.com/app/phpMyAdmin/website
 
-Requirements
+* Requirements:
 ------------
 
 Website needs Python 2.7, additional dependencies are listed in `requirements.txt`.
 
 
-Security announcements and news
+* Security announcements and news:
 -------------------------------
 
 Edit announcements and news entries in the web UI.
@@ -28,38 +28,38 @@ The are accessible through separate URL (you can click `View on the site` link
 while editing).
 
 
-Page generating
+* Page generating:
 ---------------
 
 Each page has its own template. For most things it means inclusion of
 other templates to generate full page.
 
-Menu
+* Menu:
 ----
 
 Menu is configured in data/menu.py, the first element always means page name
 second menu item title.
 
 
-Themes
+* Themes:
 ------
 
 Themes require additional metadata, which is stored in data/themes.py.
 
 
-Awards
+* Awards:
 ------
 
 All awards are listed in data/awards.py.
 
 
-Screenshots
+* Screenshots:
 -----------
 
 All screenshots are listed in data/screenshots.py.
 
 
-Development
+* Development:
 -----------
 
 For development, first install dependencies. The ones needed for running the
@@ -98,10 +98,10 @@ To run testuite execute:
     ./manage.py test
 
 
-Deployment
+Deployment ---->
 ----------
 
-Cron jobs:
+* Cron jobs:
 
 .. code-block:: sh
 
@@ -110,7 +110,7 @@ Cron jobs:
     # Update planet posts
     ./manage.py fetch_planet
 
-File releases scan:
+* File releases scan:
 
 .. code-block:: sh
 
@@ -119,16 +119,16 @@ File releases scan:
     # Import new themes from file storage
     ./manage.py import_themes
 
-License
+* License:
 -------
 
 The website generator is licensed under GNU GPL version 2 or later.
 
 Website itself uses some MIT licensed Javascript libraries:
 
-* jQuery <https://jquery.com/>
-* Bootstrap <https://getbootstrap.com/>
-* Colorbox <https://www.jacklmoore.com/colorbox/>
+- jQuery <https://jquery.com/>
+- Bootstrap <https://getbootstrap.com/>
+- Colorbox <https://www.jacklmoore.com/colorbox/>
 
 The website content is licensed under Creative Commons
 Attribution-Noncommercial-Share Alike 3.0 Unported License.
